@@ -894,15 +894,6 @@ main-nav__img-mobile{
   }
 }
 
-@media screen and (min-width: 768px) {
-  .main-nav__img-mobile{
-    display: none;
-  }
-
-  .desktop-hide{
-    display: none;
-  }
-}
 
 @media screen and (min-width: 768px) {
   body {
