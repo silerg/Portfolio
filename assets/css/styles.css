@@ -256,6 +256,29 @@ img{
   max-width: 100%;
   height: auto;
 }
+
+/*======== custom type ==========*/
+
+.bigger{
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 968px){
+  .bigger{
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 356px){
+  .bigger{
+    font-size: 2.5rem;
+  }
+}
+
+.color-span{
+  color: var(--hover-color);
+}
+
 /*========== CLASS CSS ==========*/
 .section{
   padding: 1.5rem 0;
@@ -269,6 +292,16 @@ img{
   letter-spacing: .35rem;
   text-align: center;
   margin-bottom: var(--mb-3);
+}
+
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 968px;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 }
 
 /*========== LAYOUT ==========*/
