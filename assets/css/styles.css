@@ -60,6 +60,10 @@ html{
   margin-top: 4rem;
 }
 
+.resume-hide{
+  display: none;
+}
+
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
   --title-color: #f5f5f5;
@@ -134,16 +138,18 @@ body.scale-cv{
 }
 
 /*========== Classes modified to reduce size and print on A4 sheet ==========*/
+.scale-cv .resume-hide{
+  display:block
+}
+
 .scale-cv .change-theme,
 .scale-cv .generate-pdf{
   display: none;
 }
 
 .scale-cv .bd-container{
-  max-width: 968px;
-  width: calc(100% - 3rem);
+  padding-right: 2rem;
   margin: auto;
-  
 }
 
 .scale-cv .section{
@@ -156,12 +162,15 @@ body.scale-cv{
 
 .scale-cv .resume{
   box-shadow: var(--shadow-2);
+  height: 1056px;
+  padding-right: 2rem;
 }
 
 .scale-cv .resume-left,
 .scale-cv .resume-right{
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
+
 
 .scale-cv .home__img{
   width: 90px;
